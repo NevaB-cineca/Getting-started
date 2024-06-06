@@ -57,7 +57,9 @@ Available clusters are **Galileo100**, **Marconi,** **and Leonardo **([UG3.0
 **Important:** You can login only to clusters where you have active budgets on it.
 
 * * * * *
+3\. Connecting to the Cluster
 
+===============================
 On the cluster, you can keep an eye on your **budget** of hours using the command:
 
 > saldo -b
@@ -85,7 +87,9 @@ If the module is inside a specific profile, you have to load the profile before 
 There are many **useful options** for the functions "modmap" and "module" that are described [here](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.6%3A+Production+Environment#UG2.6:ProductionEnvironment-The%22module%22command).
 
 * * * * *
+4\. The `saldo`  command
 
+==========================
 You can also **install your libraries and programs** on your local folder by yourself or using [python](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.6%3A+Production+Environment#UG2.6:ProductionEnvironment-Pythonandadditionalsoftware) environment or [spack](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.6%3A+Production+Environment#UG2.6:ProductionEnvironment-HowtoinstallyoursoftwarewithSpack) manager. Please write to <superc@cineca.it> for any questions or requests about modules and software installations.
 
 Our HPC systems offer several options for **data storage**:
@@ -148,83 +152,9 @@ Congratulations! You have successfully executed your first job on our clusters.\
 For any problem or question, please refer to our Help Desk writing to <superc@cineca.it>.
 
 
-1\. Registration
-================
 
-The first step is to **get a username** on our database and a password to enter our HPC clusters.
 
-1.  **Register** to our userDB database at [userdb.hpc.cineca.it](http://userdb.hpc.cineca.it/) by clicking on the "Create a New User" button and filling in the required fields.
-2.  Once you get access, complete the info on your user page by uploading an **Identity Card** in the Documents for HPC tab, complete the information about your** Institution** and check your **Personal Data**.
 
-This step alone does not grant you access to our clusters. You also need to be **associated with an account** that has budget resources with "cpu-hours" to be used in the clusters.
-
-* * * * *
-
-![](https://wiki.u-gov.it/confluence/download/thumbnails/647038593/FG.png?version=1&modificationDate=1717585885000&api=v2)
-
-2\. Account Association
-=======================
-
-There are multiple ways to **get an account** budget (see also [UG2.2 Become a User](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.2%3A+Become+a+User)):
-
--   A **Principal Investigator** **(PI)** of an already existing account can add you to it in the [UserDB](http://userdb.hpc.cineca.it/) portal. Only the PI can add and remove collaborators to existing accounts;
-
--   You can apply for **your own project** by submitting your proposal for an [ISCRA](http://www.hpc.cineca.it/services/iscra) or [EuroHPC](https://prace-ri.eu/hpc-access/eurohpc-access/) projects;
--   If you are a member of an Italian research Institution with already existing **agreements** with CINECA (in this case, send an email to <superc@cineca.it>);
--   General users and **Industrial** **Applications** (send a request to <superc@cineca.it>)
-
-Once your username has been associated with an active account, you can **request access** to our HPC clusters by clicking on the button "Submit" on your HPC Access page. (The button appears **only** after you have been associated with an account).
-
-![](https://wiki.u-gov.it/confluence/download/attachments/647038593/submituserdb.jpg?version=1&modificationDate=1717485127000&api=v2)
-
-After we have granted you access, you will receive two emails: one with the username and another with the link to the page where you can configure the two-factor authentication (2FA) needed to access our clusters. You can follow the "[newHow to activate the 2FA and configure the OTP](https://wiki.u-gov.it/confluence/pages/createpage.action?spaceKey=SCAIAR&title=newHow+to+activate+the+2FA+and+configure+the+OTP&linkCreation=true&fromPageId=647038593)" page with dedicated instructions on how to configure the 2FA. You will also have to install a smallstep client ("[newHow to install the smallstep client](https://wiki.u-gov.it/confluence/pages/createpage.action?spaceKey=SCAIAR&title=newHow+to+install+the+smallstep+client&linkCreation=true&fromPageId=647038593)") on your personal PC to download a temporary certificated needed for the login. During 2FA configuration you will be also asked to set a password. Please you can find our policy about password definition at the [dedicated page](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.3%3A+Access+to+the+Systems#UG2.3:AccesstotheSystems-Policyforpassworddefinition).
-
-**Important:** The link for the configuration of the 2FA has a **duration of only 24 hours**. After its expiration you need to write to <superc@cineca.it> to get a new valid link.
-
-**Remember:** Login credentials are to be considered **strictly personal**, meaning that **NO SHARING** between members of the same working group is expected to happen. Every single user entitled with login credentials is to be considered personally **responsible** for any misuse that should take place.
-
-* * * * *
-
-![](https://wiki.u-gov.it/confluence/download/thumbnails/647038593/FG.png?version=1&modificationDate=1717585885000&api=v2)
-
-3\. Connecting to the Cluster
-
-===============================
-
-Once you configured the 2FA, you can login to the cluster in which the budget account you are associated with is active, by:
-
--   open a terminal and download a temporary certificate [using the step command](https://wiki.u-gov.it/confluence/display/SCAIUS/Setup+client+step-cli%3A+Linux+and+Mac+users#Setupclientstepcli:LinuxandMacusers-Activationofthessh-agent);
--   connect to the cluster launching the command
-
-> ssh <username>@login.<cluster>.[cineca.it](http://cineca.it/)
-
-(Windows users can find [here](https://wiki.u-gov.it/confluence/display/SCAIUS/Setup+client+step-cli%3A+Windows+users#Setupclientstepcli:Windowsusers-Activationofthessh-agent) the instructions)\
-At present the only method to login to our clusters is via 2FA authentication. Please write to <superc@cineca.it> if you find problems in configuring and using it.
-
-Available clusters are **Galileo100**, **Marconi,** **and Leonardo **([UG3.0 System specific guides](https://wiki.u-gov.it/confluence/display/SCAIUS/UG3.0%3A+System+Specific+Guides)).
-
-**Important:** You can login only to clusters where you have active budgets on it.
-
-* * * * *
-
-![](https://wiki.u-gov.it/confluence/download/thumbnails/647038593/FG.png?version=1&modificationDate=1717585885000&api=v2)
-
-4\. The `saldo`  command
-
-==========================
-
-On the cluster, you can keep an eye on your **budget** of hours using the command:
-
-> saldo -b
-
-This lists all the accounts associated with your username on the current cluster, together with the "budget" and the consumed resources.\
-Additional **info** on this very useful command and our **billing policy** can be found on the "[UG2.4 Accounting](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.4%3A+Accounting)" page.
-
-One username can use multiple accounts, and one single account can be used by multiple usernames (and even on multiple platforms), all competing for the same budget.
-
-* * * * *
-
-![](https://wiki.u-gov.it/confluence/download/thumbnails/647038593/FG.png?version=1&modificationDate=1717585885000&api=v2)
 
 
 
