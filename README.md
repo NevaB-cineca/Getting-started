@@ -11,7 +11,8 @@ It describes all the steps to be followed** to access our systems** up to the 
 This is a schematic guide with a few examples, and it is not intended to be complete. We always strongly recommend **reading the full documentation** that can be reached using the links you can find along with the text.
 
 * * * * *
-
+1\. Registration
+================
 The first step is to **get a username** on our database and a password to enter our HPC clusters.
 
 1.  **Register** to our userDB database at [userdb.hpc.cineca.it](http://userdb.hpc.cineca.it/) by clicking on the "Create a New User" button and filling in the required fields.
@@ -39,6 +40,8 @@ After we have granted you access, you will receive two emails: one with the user
 
 * * * * *
 
+2\. Account Association
+=======================
 Once you configured the 2FA, you can login to the cluster in which the budget account you are associated with is active, by:
 
 -   open a terminal and download a temporary certificate [using the step command](https://wiki.u-gov.it/confluence/display/SCAIUS/Setup+client+step-cli%3A+Linux+and+Mac+users#Setupclientstepcli:LinuxandMacusers-Activationofthessh-agent);
