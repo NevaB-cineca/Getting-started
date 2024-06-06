@@ -1,8 +1,6 @@
-# Getting-started
-prova pagina getting started dalla documentazione cineca a github
+# CINECA User Guide
 
-[UG2.1 Getting started](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.1+Getting+started)
-==============================================================================================
+## UG2.1 Getting started
 
 In the following, you can find a simple and quick **start guide** for users new to HPC systems and expert users who would like to use our systems.
 
@@ -10,9 +8,8 @@ It describes all the steps to be followed** to access our systems** up to the 
 
 This is a schematic guide with a few examples, and it is not intended to be complete. We always strongly recommend **reading the full documentation** that can be reached using the links you can find along with the text.
 
-* * * * *
-1\. Registration
-================
+### 1. Registration
+
 The first step is to **get a username** on our database and a password to enter our HPC clusters.
 
 1.  **Register** to our userDB database at [userdb.hpc.cineca.it](http://userdb.hpc.cineca.it/) by clicking on the "Create a New User" button and filling in the required fields.
@@ -38,16 +35,16 @@ After we have granted you access, you will receive two emails: one with the user
 
 **Remember:** Login credentials are to be considered **strictly personal**, meaning that **NO SHARING** between members of the same working group is expected to happen. Every single user entitled with login credentials is to be considered personally **responsible** for any misuse that should take place.
 
-* * * * *
+### 2. Account Association
 
-2\. Account Association
-=======================
 Once you configured the 2FA, you can login to the cluster in which the budget account you are associated with is active, by:
 
 -   open a terminal and download a temporary certificate [using the step command](https://wiki.u-gov.it/confluence/display/SCAIUS/Setup+client+step-cli%3A+Linux+and+Mac+users#Setupclientstepcli:LinuxandMacusers-Activationofthessh-agent);
 -   connect to the cluster launching the command
 
-> ssh <username>@login.<cluster>.[cineca.it](http://cineca.it/)
+```shell
+ssh <username>@login.<cluster>.cineca.it
+```
 
 (Windows users can find [here](https://wiki.u-gov.it/confluence/display/SCAIUS/Setup+client+step-cli%3A+Windows+users#Setupclientstepcli:Windowsusers-Activationofthessh-agent) the instructions)\
 At present the only method to login to our clusters is via 2FA authentication. Please write to <superc@cineca.it> if you find problems in configuring and using it.
@@ -56,12 +53,13 @@ Available clusters are **Galileo100**, **Marconi,** **and Leonardo **([UG3.0
 
 **Important:** You can login only to clusters where you have active budgets on it.
 
-* * * * *
-3\. Connecting to the Cluster
-===============================
+### 3. Connecting to the Cluster
+
 On the cluster, you can keep an eye on your **budget** of hours using the command:
 
-> saldo -b
+```shell
+saldo -b
+```
 
 This lists all the accounts associated with your username on the current cluster, together with the "budget" and the consumed resources.\
 Additional **info** on this very useful command and our **billing policy** can be found on the "[UG2.4 Accounting](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.4%3A+Accounting)" page.
@@ -71,23 +69,26 @@ One username can use multiple accounts, and one single account can be used by mu
 Some software, environments and compilers are already installed on the clusters and are available as **modules** ([UG2.6 Production Environment](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.6%3A+Production+Environment)).\
 They are divided into different **profiles** depending on the category of research. The command
 
-> modmap
+```shell
+modmap
+```
 
 shows all the profiles, categories and modules that you can load.
 
 To load a module type:
-
-> module load <module_name>
+```shell
+module load <module_name>
+```
 
 If the module is inside a specific profile, you have to load the profile before the module:
 
-> module load profile/<profile_name>
+```shell
+module load profile/<profile_name>
+```
 
 There are many **useful options** for the functions "modmap" and "module" that are described [here](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.6%3A+Production+Environment#UG2.6:ProductionEnvironment-The%22module%22command).
 
-* * * * *
-4\. The `saldo`  command
-==========================
+### 4. The `saldo`  command
 
 You can also **install your libraries and programs** on your local folder by yourself or using [python](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.6%3A+Production+Environment#UG2.6:ProductionEnvironment-Pythonandadditionalsoftware) environment or [spack](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.6%3A+Production+Environment#UG2.6:ProductionEnvironment-HowtoinstallyoursoftwarewithSpack) manager. Please write to <superc@cineca.it> for any questions or requests about modules and software installations.
 
@@ -149,13 +150,4 @@ Congratulations! You have successfully executed your first job on our clusters.\
 **Remind**: Going through our detailed documentation may help you optimize your programs on our clusters and save hours of your budget.
 
 For any problem or question, please refer to our Help Desk writing to <superc@cineca.it>.
-
-
-
-
-
-
-
-
-
 
