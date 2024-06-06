@@ -143,3 +143,42 @@ Congratulations! You have successfully executed your first job on our clusters.\
 **Remind**: Going through our detailed documentation may help you optimize your programs on our clusters and save hours of your budget.
 
 For any problem or question, please refer to our Help Desk writing to <superc@cineca.it>.
+
+. Registration
+The first step is to get a username on our database and a password to enter our HPC clusters.
+
+ Register to our userDB database at userdb.hpc.cineca.it by clicking on the "Create a New User" button and filling in the required fields.
+ Once you get access, complete the info on your user page by uploading an Identity Card in the Documents for HPC tab, complete the information about your Institution and check your Personal Data.
+This step alone does not grant you access to our clusters. You also need to be associated with an account that has budget resources with "cpu-hours" to be used in the clusters.
+
+
+
+
+
+
+
+2. Account Association
+There are multiple ways to get an account budget (see also UG2.2 Become a User):
+
+A Principal Investigator (PI) of an already existing account can add you to it in the UserDB portal. Only the PI can add and remove collaborators to existing accounts;
+You can apply for your own project by submitting your proposal for an ISCRA or EuroHPC projects;
+If you are a member of an Italian research Institution with already existing agreements with CINECA (in this case, send an email to superc@cineca.it);
+General users and Industrial Applications (send a request to superc@cineca.it)
+Once your username has been associated with an active account, you can request access to our HPC clusters by clicking on the button "Submit" on your HPC Access page. (The button appears only after you have been associated with an account).
+
+
+
+
+After we have granted you access, you will receive two emails: one with the username and another with the link to the page where you can configure the two-factor authentication (2FA) needed to access our clusters. You can follow the "newHow to activate the 2FA and configure the OTP" page with dedicated instructions on how to configure the 2FA. You will also have to install a smallstep client ("newHow to install the smallstep client") on your personal PC to download a temporary certificated needed for the login. During 2FA configuration you will be also asked to set a password. Please you can find our policy about password definition at the dedicated page.
+
+Important: The link for the configuration of the 2FA has a duration of only 24 hours. After its expiration you need to write to superc@cineca.it to get a new valid link.
+
+Remember: Login credentials are to be considered strictly personal, meaning that NO SHARING between members of the same working group is expected to happen. Every single user entitled with login credentials is to be considered personally responsible for any misuse that should take place.
+
+
+
+
+
+
+
+3. Connecting to the Cluster
