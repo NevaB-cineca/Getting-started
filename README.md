@@ -58,7 +58,6 @@ Available clusters are **Galileo100**, **Marconi,** **and Leonardo **([UG3.0
 
 * * * * *
 3\. Connecting to the Cluster
-
 ===============================
 On the cluster, you can keep an eye on your **budget** of hours using the command:
 
@@ -88,8 +87,8 @@ There are many **useful options** for the functions "modmap" and "module" that
 
 * * * * *
 4\. The `saldo`  command
-
 ==========================
+
 You can also **install your libraries and programs** on your local folder by yourself or using [python](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.6%3A+Production+Environment#UG2.6:ProductionEnvironment-Pythonandadditionalsoftware) environment or [spack](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.6%3A+Production+Environment#UG2.6:ProductionEnvironment-HowtoinstallyoursoftwarewithSpack) manager. Please write to <superc@cineca.it> for any questions or requests about modules and software installations.
 
 Our HPC systems offer several options for **data storage**:
