@@ -112,7 +112,7 @@ For longer runs, you need to use the "**batch**" mode. On CINECA machines we use
 
 A simple **batch script** to submit a job is the following
 
-```shell
+```bash
 #!/bin/bash
 
 #SBATCH --nodes=<nodes_no>           # number of nodes\
