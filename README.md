@@ -4,8 +4,6 @@ prova pagina getting started dalla documentazione cineca a github
 [UG2.1 Getting started](https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.1+Getting+started)
 ==============================================================================================
 
--   Creato da [Neva Besker](https://wiki.u-gov.it/confluence/display/~n.besker@cineca.it), ultima modifica di [Antonio De Nicola](https://wiki.u-gov.it/confluence/display/~a.denicola@cineca.it) [ieri alle 4:26 PM](https://wiki.u-gov.it/confluence/pages/diffpagesbyversion.action?pageId=358197670&selectedPageVersions=35&selectedPageVersions=36 "Mostra le modifiche")
-
 In the following, you can find a simple and quick **start guide** for users new to HPC systems and expert users who would like to use our systems.
 
 It describes all the steps to be followed** to access our systems** up to the first job submission.
