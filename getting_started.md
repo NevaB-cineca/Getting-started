@@ -1,6 +1,4 @@
-# CINECA User Guide
-
-## UG2.1 Getting started
+# Getting started
 
 In the following, you can find a simple and quick **start guide** for users new to HPC systems and expert users who would like to use our systems.
 
@@ -8,7 +6,7 @@ It describes all the steps to be followed** to access our systems** up to the fi
 
 This is a schematic guide with a few examples, and it is not intended to be complete. We always strongly recommend **reading the full documentation** that can be reached using the links you can find along with the text.
 
-### 1. Registration
+## Registration
 
 The first step is to **get a username** on our database and a password to enter our HPC clusters.
 
@@ -35,7 +33,7 @@ After we have granted you access, you will receive two emails: one with the user
 
 **Remember:** Login credentials are to be considered **strictly personal**, meaning that **NO SHARING** between members of the same working group is expected to happen. Every single user entitled with login credentials is to be considered personally **responsible** for any misuse that should take place.
 
-### 2. Account Association
+## Account Association
 
 Once you configured the 2FA, you can login to the cluster in which the budget account you are associated with is active, by:
 
@@ -53,7 +51,7 @@ Available clusters are **Galileo100**, **Marconi,** **and Leonardo **([UG3.0 Sys
 
 **Important:** You can login only to clusters where you have active budgets on it.
 
-### 3. Connecting to the Cluster
+## Connecting to the Cluster
 
 On the cluster, you can keep an eye on your **budget** of hours using the command:
 
@@ -114,6 +112,7 @@ For longer runs, you need to use the "**batch**" mode. On CINECA machines we use
 
 A simple **batch script** to submit a job is the following
 
+```shell
 #!/bin/bash
 
 #SBATCH --nodes=<nodes_no>           # number of nodes\
@@ -127,6 +126,7 @@ A simple **batch script** to submit a job is the following
 #SBATCH --qos=<qos_name>             # quality of service (optional)
 
 srun ./my_application
+```
 
 In the script we tell the scheduler the amount of **resources** needed (--nodes, --ntasks-per-node and --mem) on which **partition** (--partition and --qos) and which **budget** of hours to be used (--account). The session has a **walltime** (--time) and the **outputs** of the code are collected in myJob.out and myJob.err (--output and --error respectively).\
 The partition and the resources **depend on the machine** you are considering. All you need to know to properly fill your batch script can be found in the "[UG3.0 System specific guide](https://wiki.u-gov.it/confluence/display/SCAIUS/UG3.0%3A+System+Specific+Guides)" page.
